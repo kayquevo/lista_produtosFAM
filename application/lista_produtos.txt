@@ -1,0 +1,1 @@
+geladeira 2300 radio 400 tv 1000 geladeira 1399 fogao 245 micro_ondas 100 computador 1400 computador_gamer 4900 enciclopedia 150 terno 150 vestido_noiva 1000 cachimbo 230 Livro_informatica 110 monitor_curvo 1225 vestido_festa 2000 vaso_cristal 1500
