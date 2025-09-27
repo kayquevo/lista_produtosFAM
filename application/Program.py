@@ -8,7 +8,7 @@ Integrantes do Grupo:
 00351772 Kayque Viana Oliveira
 """
 
-PRODUTOS = "lista_produtos.txt"
+PRODUTOS = "application/lista_produtos.txt"
 
 def carregar():
     try:
@@ -16,7 +16,6 @@ def carregar():
         inFile = open(PRODUTOS, 'r', encoding='utf-8')
 
         dados = inFile.read()
-        inFile = inFile.read()
 
         dados_limpos = dados.lower().strip()
 
@@ -26,7 +25,25 @@ def carregar():
         return ""
     
 prod = carregar()
-print(prod)
+
+
+def lista_tupla(aLista):
+
+    lista_dos_produtos = aLista.split()
+    lista_de_pares = []
+
+    for i in range(0, len(lista_dos_produtos), 2):
+        produto = lista_dos_produtos[i]
+        preco = int(lista_dos_produtos[i+1])
+
+        lista_de_pares.append((produto, preco))
+        
+    tupla = tuple(lista_de_pares)
+    
+    return tupla
+
+tup = lista_tupla(prod)
+print(tup)
 
 
         
